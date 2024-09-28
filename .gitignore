@@ -1,0 +1,4 @@
+*.class
+Makefile
+**/.vscode
+**/README.md
