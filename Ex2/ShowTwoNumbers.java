@@ -1,4 +1,3 @@
-package Ex2;
 import javax.swing.JOptionPane;
 
 public class ShowTwoNumbers {
