@@ -1,3 +1,4 @@
+package Lab01.Ex6.JavaBasics.src;
 import javax.swing.JOptionPane;
 
 public class ChoosingOption {

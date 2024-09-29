@@ -1,3 +1,4 @@
+package Lab01.Ex6.DaysInMonth.src;
 import java.util.*;
 
 public class App {

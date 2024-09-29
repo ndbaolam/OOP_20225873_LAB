@@ -1,3 +1,4 @@
+package Lab01.Ex6.JavaBasics.src;
 import java.util.Scanner;
 
 public class InputFormKeyboard {
