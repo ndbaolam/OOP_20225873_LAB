@@ -1,7 +1,7 @@
 package test;
 
-import aims.DigitalVideoDisc;
-import aims.Store;
+import aims.store.Store;
+import aims.disc.DigitalVideoDisc;
 
 public class StoreTest {
   public static void main(String[] args) {
