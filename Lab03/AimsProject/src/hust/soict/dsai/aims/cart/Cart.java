@@ -1,5 +1,6 @@
 package aims.cart;
-import aims.DigitalVideoDisc;
+
+import aims.disc.DigitalVideoDisc;
 
 public class Cart {
   public static final int MAX_NUMBERS_ORDERD = 20;
