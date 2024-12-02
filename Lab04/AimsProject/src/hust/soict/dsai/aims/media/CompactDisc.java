@@ -6,8 +6,8 @@ public class CompactDisc extends Disc implements Playable {
   private String artist;
   private List<Track> tracks = new ArrayList<Track>();
 
-  CompactDisc(String director, int length) {
-    super(director, director, director, length, length);
+  public CompactDisc(String title, String category, String director, int length, float cost) {
+    super(title, category, director, length, cost);
   }
 
   public int getLength() {

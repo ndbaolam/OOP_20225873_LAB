@@ -1,11 +1,11 @@
 package test;
 
-import aims.disc.DigitalVideoDisc;
+import aims.media.*;
 
 public class TestPassingParameter {
   public static void main(String[] args) {
-    DigitalVideoDisc jungleDVD = new DigitalVideoDisc("Jungle");
-    DigitalVideoDisc cinderellaDVD = new DigitalVideoDisc("Cinderella");        
+    DigitalVideoDisc jungleDVD = new DigitalVideoDisc("Jungle", null, 0);
+    DigitalVideoDisc cinderellaDVD = new DigitalVideoDisc("Cinderella", null, 0);        
 
     jungleDVD = swap(cinderellaDVD, cinderellaDVD = jungleDVD);
     System.out.println("jungle dvd title: " + jungleDVD.getTitle());
@@ -23,6 +23,6 @@ public class TestPassingParameter {
   public static void changeTitle(DigitalVideoDisc dvd, String title) {
     String oldTitle = dvd.getTitle();
     dvd.setTitle(title);
-    dvd = new DigitalVideoDisc(oldTitle);
+    dvd = new DigitalVideoDisc(oldTitle, oldTitle, 0);
   }
 }
