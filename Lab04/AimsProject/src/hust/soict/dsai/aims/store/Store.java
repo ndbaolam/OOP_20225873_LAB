@@ -1,23 +1,19 @@
 package aims.store;
 import java.util.ArrayList;
 
-import aims.media.DigitalVideoDisc;
+import aims.media.Media;
 
 public class Store {
-  private ArrayList<DigitalVideoDisc> itemsInStore;
+  private ArrayList<Media> itemsInStore = new ArrayList<Media>();  
 
-  public Store() {
-    itemsInStore = new ArrayList<>();
+  public void addMedia(Media media) {
+    itemsInStore.add(media);
   }
 
-  public void addDVD(DigitalVideoDisc dvd) {
-    itemsInStore.add(dvd);
-  }
-
-  public void removeDVD(DigitalVideoDisc dvd) {
-    if(itemsInStore.contains(dvd))
-      itemsInStore.remove(dvd);
+  public void removeMedia(Media media) {
+    if(itemsInStore.contains(media))
+      itemsInStore.remove(media);
     else 
-      System.out.println("DVD not found!");
+      System.out.println("media not found!");
   }
 }
