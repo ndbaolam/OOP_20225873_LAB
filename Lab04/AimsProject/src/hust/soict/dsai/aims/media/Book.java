@@ -1,11 +1,7 @@
 package aims.media;
 import java.util.*;
 
-public class Book {
-  private int id;
-  private String title;
-  private String category;
-  private float cost;
+public class Book extends Media {  
   private List<String> authors = new ArrayList<String>();
 
   public Book() {
@@ -28,9 +24,5 @@ public class Book {
     }      
 
     authors.remove(authorName);
-  }
-
-  public static void main(String[] args) {
-    
-  }
+  }  
 }

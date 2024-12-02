@@ -1,7 +1,7 @@
 package aims.store;
 import java.util.ArrayList;
 
-import aims.disc.DigitalVideoDisc;
+import aims.media.DigitalVideoDisc;
 
 public class Store {
   private ArrayList<DigitalVideoDisc> itemsInStore;

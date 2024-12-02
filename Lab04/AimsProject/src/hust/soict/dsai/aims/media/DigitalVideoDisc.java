@@ -1,37 +1,16 @@
-package aims.disc;
+package aims.media;
 
-public class DigitalVideoDisc {
-  private String title;
-  private String category;
+public class DigitalVideoDisc extends Media {  
   private String director;
-  private int length;
-  private float cost;
-  //Section 5: Classifier Member & Instance Member
-  private int id;
+  private int length;  
   static int nbDigitalVideoDisc = 0;  
-
-  public int getId() {
-    return id;
-  }
-
-  public String getTitle() {
-    return title;
-  }
-
-  public String getCategory() {
-    return category;
-  }
-
+  
   public String getDirector() {
     return director;
   }
 
   public int getLength() {
     return length;
-  }
-
-  public float getCost() {
-    return cost;
   }
 
   public void setTitle(String titleString) {
