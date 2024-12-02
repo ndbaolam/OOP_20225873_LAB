@@ -1,12 +1,18 @@
 package aims.media;
 
-import java.lang.Object;
-
 public abstract class Media {
+  protected static int nextId = 1;
   protected int id;
   protected String title;
   protected String category;
-  protected float cost;
+  protected float cost;  
+
+  public Media(String title, String category, float cost) {
+    this.title = title;
+    this.category = category;
+    this.cost = cost;
+    this.id = nextId++;
+  }  
 
   public int getId() {
     return id;
