@@ -1,7 +1,7 @@
-package aims.store;
+package store;
 import java.util.ArrayList;
 
-import aims.media.Media;
+import media.Media;
 
 public class Store {
   private ArrayList<Media> itemsInStore = new ArrayList<Media>();  
@@ -16,4 +16,35 @@ public class Store {
     else 
       System.out.println("media not found!");
   }
+
+  public void printStore() {
+		System.out.println("***********************STORE***********************");
+		System.out.println("Store list:");
+		for (Media m : this.itemsInStore) {
+			System.out.println(m.toString());
+		}
+		System.out.println("****************************************************");
+	}
+
+  public Media search(int id) {
+		for (Media media : itemsInStore) {
+			if (media.getId() == id) {
+				System.out.println("Found");
+				return media;
+			}
+		}
+		System.out.println("Not found");
+		return null;
+	}
+
+	public Media search(String title) {
+		for (Media media : itemsInStore) {
+			if (media.getTitle().equals(title)) {
+				System.out.println("Found");
+				return media;
+			}
+		}
+		System.out.println("Not found");
+		return null;
+	}
 }

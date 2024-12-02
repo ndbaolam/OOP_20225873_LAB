@@ -1,4 +1,4 @@
-package aims.media;
+package media;
 
 public class DigitalVideoDisc extends Disc implements Playable {        
   public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
@@ -7,6 +7,14 @@ public class DigitalVideoDisc extends Disc implements Playable {
   
   public DigitalVideoDisc(String title, String category, float cost) {
     this(title, category, null, 0, cost);
+  }
+
+  public DigitalVideoDisc(String title) {
+    this(title, null, null, 0, 0);
+  }
+
+  public DigitalVideoDisc(String title, String category, String director, float cost) {
+    this(title, category, director, 0, cost);
   }
 
   @Override

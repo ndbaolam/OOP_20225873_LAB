@@ -1,7 +1,7 @@
 package test;
 
-import aims.store.Store;
-import aims.media.*;
+import store.Store;
+import media.*;
 
 public class StoreTest {
   public static void main(String[] args) {

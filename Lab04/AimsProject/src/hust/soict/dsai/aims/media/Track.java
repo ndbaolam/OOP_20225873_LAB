@@ -1,10 +1,10 @@
-package aims.media;
+package media;
 
 public class Track implements Playable{
   private String title;
   private int lenght;
 
-  Track(String title, int lenght) {
+  public Track(String title, int lenght) {
     this.lenght = lenght;
     this.title = title;
   }

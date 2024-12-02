@@ -1,7 +1,7 @@
 package test;
 
-import aims.cart.Cart;
-import aims.media.*;
+import cart.Cart;
+import media.*;
 
 public class CartTest {
   public static void main(String[] args) {

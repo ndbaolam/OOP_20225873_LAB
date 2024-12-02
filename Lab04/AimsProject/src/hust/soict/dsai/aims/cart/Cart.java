@@ -1,8 +1,8 @@
-package aims.cart;
+package cart;
 
 import java.util.ArrayList;
 
-import aims.media.Media;
+import media.Media;
 
 public class Cart {
   public static final int MAX_NUMBERS_ORDERD = 20;
@@ -63,4 +63,40 @@ public class Cart {
     }
     return total;
   }
+
+  public Media search(int id) {
+		for (Media media : itemsOrdered) {
+			if (media.getId() == id) {
+				System.out.println("Found");
+				return media;
+			}
+		}
+		System.out.println("Not found");
+		return null;
+	}
+
+	public Media search(String title) {
+		for (Media media : itemsOrdered) {
+			if (media.getTitle().equals(title)) {
+				System.out.println("Found");
+				return media;
+			}
+		}
+		System.out.println("Not found");
+		return null;
+	}
+
+  public void emptyCart() {
+		itemsOrdered.clear();
+	}
+
+	public void sortCart(int choice) {
+		if (choice == 0) {
+			itemsOrdered.sort(Media.COMPARATOR_BY_TITLE_COST);
+			System.out.println("Cart sorted!");
+		} else if (choice == 1) {
+			itemsOrdered.sort(Media.COMPARATOR_BY_COST_TITLE);
+			System.out.println("Cart sorted!");
+		}
+	}
 }

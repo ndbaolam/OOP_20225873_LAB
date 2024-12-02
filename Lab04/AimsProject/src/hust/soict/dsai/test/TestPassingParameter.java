@@ -1,6 +1,6 @@
 package test;
 
-import aims.media.*;
+import media.*;
 
 public class TestPassingParameter {
   public static void main(String[] args) {

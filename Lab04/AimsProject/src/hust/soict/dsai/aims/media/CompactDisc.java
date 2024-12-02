@@ -1,4 +1,4 @@
-package aims.media;
+package media;
 
 import java.util.*;
 
@@ -8,6 +8,12 @@ public class CompactDisc extends Disc implements Playable {
 
   public CompactDisc(String title, String category, String director, int length, float cost) {
     super(title, category, director, length, cost);
+  }
+
+  public CompactDisc(String title, String category, String director, int length, float cost, String artist, ArrayList<Track> tracks) {
+    super(title, category, director, length, cost);
+    this.artist = artist;
+    this.tracks = tracks;
   }
 
   public int getLength() {

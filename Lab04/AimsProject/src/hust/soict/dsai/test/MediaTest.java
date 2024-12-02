@@ -1,5 +1,5 @@
 package test;
-import aims.media.*;
+import media.*;
 import java.util.*;
 
 public class MediaTest {

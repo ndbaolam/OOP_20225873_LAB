@@ -1,4 +1,4 @@
-package aims.media;
+package media;
 import java.util.*;
 
 public class Book extends Media {  
